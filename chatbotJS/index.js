@@ -1,6 +1,6 @@
 //if you want to run it on your computer then firstly make you sure that you have generated 
 //your own api from openAI and assign it to apikey variable
-const apiKey="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";
+const apiKey="";
 const  submitBtn=document.querySelector("#submit");
 const msgRepliedBox=document.querySelector(".message-reply-box");
 let currentIndex=0;
