@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+.full {
+  background-color: #000;
+  color: #fff;
+  height: 100vh;
+}
+.header {
+  margin: 2rem;
+  height: 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn {
+  font-size: 3.6rem;
+  font-weight: 600;
+  padding: 0.5rem;
+}
+.game-content {
+  text-align: center;
+}
+.heading {
+  font-size: 5.8rem;
+  font-weight: 700;
+}
+.number-box {
+  display: inline-block;
+  font-size: 7.2rem;
+  width: 8rem;
+  height: 8rem;
+  background-color: white;
+
+  color: black;
+  position: relative;
+}
+/*.number-box::after {
+  content: "";
+  height: 16px;
+  width: 100vw;
+  display: inline-block;
+  background-color: #fff;
+  position: absolute;
+  left: -600px;
+  top: 33px;
+  z-index: 0;
+}*/
+.real-game-content {
+  margin: 4rem 10rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 2.4rem;
+}
+.check {
+  width: 40%;
+  justify-self: center;
+}
+.guess {
+  background-color: #000;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 35px 35px;
+  justify-self: center;
+}
+.message,
+.score,
+.highscore {
+  font-size: 3rem;
+}
+@media (max-width: 550px) {
+  html {
+    font-size: 42%;
+  }
+  .game-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+  }
+}
