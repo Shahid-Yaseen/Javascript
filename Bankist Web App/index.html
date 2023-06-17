@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bankist_App</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <p class="welcome-text">Login to get Started</p>
+      <div class="logo-img"><img src="logo.png" alt="bankist-logo" /></div>
+      <div class="login-btns">
+        <input class="user-name"type="text" placeholder="user" />
+        <input class="user-pin"type="text" placeholder="PIN" />
+        <button class="btn-login arrow"type="submit">&rightarrow;</button>
+      </div>
+    </header>
+    <section>
+    <div class="balance-containor containor">
+      <div class="current-balance">Current Balance</div>
+      <div class="current-balance-value">00000</div>
+    </div>
+    <div class="ui containor">
+      
+     
+        <div class="movements-box">
+          
+        </div>
+      
+        
+       
+          <div class="transfer-money ">
+            <p>Transfer Money</p>
+            <div class="small-box">
+            <div>
+                <input class="transfer-money-input money-input" type="text">
+                <p>Transfer to</p>
+            </div>
+            <div>
+                <input class="transfer-money-input-value money-input" type="number">
+                <p>Amount</p>
+            </div>
+            <button class='transfer-money-btn'type="submit">&rightarrow;</button>
+            </div>
+        </div>
+
+           
+        <div class="request-loan ">
+            <p>Request loan</p>
+            <div class="small-box">
+            <div>
+                <input class="loan-money-input-value money-input" type="number">
+                <p>Amount</p>
+            </div>
+            <button class="request-loat-btn" type="submit">&rightarrow;</button>
+        </div>
+        </div>
+
+
+          <div class="close-account ">
+            <p>Close Account</p>
+            <div class="small-box">
+            <div>
+                <input class="close-account-user-input money-input" type="text">
+                <p>Confirm user</p>
+            </div>
+            <div>
+                <input class="close-account-pin-input money-input" type="password">
+                <p>Confirm PIN</p>
+            </div>
+            <button class="close-account-btn"  type="submit">&rightarrow;</button>
+        </div>
+          </div>
+        
+     
+    </div>
+    <footer class="containor">
+        <div><p class="in-label">IN<p class="footer-values income">238</p></p></div>
+        <div>  <p class="in-label">OUT<p class="footer-values outcome">238</p></p></div>
+        <div> <p class="in-label">INTEREST<p class="footer-values interest">238</p></p></div>
+        <div><button class="sort-btn">&downarrow;SORT</button></div>
+    </footer>
+  </section>
+    <script src="script.js"></script>
+  </body>
+</html>

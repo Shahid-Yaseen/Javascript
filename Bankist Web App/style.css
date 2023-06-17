@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+body {
+  background-color: rgba(245, 245, 220, 0.521);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+header {
+  height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+img {
+  width: 100%;
+}
+.logo-img {
+  width: 48px;
+}
+.welcome-text {
+  font-size: 24px;
+}
+.user-name,
+.user-pin {
+  font-size: 18px;
+  width: 96px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+.arrow {
+  border: none;
+  font-size: 28px;
+  padding: 10px;
+  background-color: rgba(245, 245, 220, 0.521);
+}
+.ui {
+  margin-top: 60px;
+  width: 1100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.movements-box {
+  width: 620px;
+  height: 500px;
+  grid-row: 1/-1;
+  grid-column: 1/2;
+  border-top-left-radius: 10px;
+  overflow: scroll;
+}
+section {
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s;
+}
+.movement {
+  width: 600px;
+  background-color: #fff;
+}
+.containor {
+  margin-left: 72px;
+  margin-right: 72px;
+}
+.movement {
+  height: 96px;
+  border-bottom: 3px solid rgba(245, 245, 220, 0.521);
+}
+.deposit-movement {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+.deposit-label,
+.withdraw-label {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #fff;
+  padding: 3px 6px;
+
+  border-radius: 10px;
+}
+.deposit-label {
+  background-color: rgb(54, 236, 54);
+}
+.withdraw-label {
+  background-color: red;
+}
+.small-box {
+  width: 160px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.money-input {
+  width: 140px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+}
+.transfer-money > p,
+.request-loan > p,
+.close-account > p {
+  font-size: 20px;
+  font-weight: 600;
+}
+.transfer-money button,
+.request-loan button,
+.close-account button {
+  background-color: #fff;
+  text-align: center;
+  height: 30px;
+  padding-bottom: 10px;
+  transform: translateY(-35%);
+  padding: 1px;
+  border: none;
+  font-size: 28px;
+  font-weight: 300;
+}
+footer {
+  display: flex;
+  width: 600px;
+  height: 96px;
+  justify-content: space-evenly;
+}
+footer div {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.footer-values {
+  font-size: 30px;
+  padding-bottom: 12px;
+}
+.sort-btn {
+  border: none;
+}
+.ui input {
+  background-color: rgba(240, 248, 255, 0.575);
+  font-size: 20px;
+  padding: 5px;
+}
+.transfer-money,
+.request-loan,
+.close-account {
+  padding: 20px;
+  border-radius: 10px;
+}
+.transfer-money {
+  background-color: #ffb003;
+}
+.request-loan {
+  background-color: rgba(0, 128, 0, 0.658);
+}
+.close-account {
+  background-color: rgba(255, 0, 0, 0.603);
+}
+.transfer-money div p,
+.request-loan div p,
+.close-account div p {
+  padding-top: 10px;
+  padding-left: 3px;
+}
+.balance-containor {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 100px;
+  font-size: 30px;
+}
